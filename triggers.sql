@@ -193,6 +193,6 @@ EXECUTE FUNCTION fn_reactivar_cliente();
 
 -- Prueba:
 UPDATE clientes SET estado = 'inactivo' WHERE id = 4;
-INSERT INTO ventas (cliente_id, fecha, total)
-VALUES (4, NOW(), 200);
+INSERT INTO ventas (cliente_id, fecha)
+VALUES (4, NOW());
 SELECT id, nombre, estado FROM clientes WHERE id = 4;
