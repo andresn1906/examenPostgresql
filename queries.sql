@@ -13,8 +13,8 @@ SELECT TO_CHAR(v.fecha, 'YYYY-MM') AS Mes,
 SUM(vd.cantidad * vd.precio_unitario) AS TotalVentas
 FROM ventas v
 INNER JOIN ventas_detalle vd ON v.id = vd.venta_id
-WHERE DATE_TRUNC('month', v.fecha) = DATE '2025-08-10'
-GROUP BY mes;
+WHERE DATE_TRUNC('month', v.fecha) = DATE_TRUNC('month', DATE '2025-08-10')
+GROUP BY Mes;
 
 3️⃣ *Obtener el cliente con más compras realizadas:*
 

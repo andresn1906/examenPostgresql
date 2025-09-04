@@ -1,5 +1,6 @@
 ## 📄**2. Estructura DB:**
 
+
 DROP DATABASE inventarioTienda
 CREATE DATABASE inventarioTienda;
 USE DATABASE inventarioTienda;
